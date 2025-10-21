@@ -30,6 +30,16 @@ Spec Kit 是一個 Spec-Driven Development (SDD) 工具包，用於從規格文�
   - `analyze.md` - 跨文件一致性分析
   - `checklist.md` - 產生品質檢查清單
 
+### VitePress 文檔系統
+
+- **文檔目錄**: `docs/` - VitePress 繁體中文文檔
+- **配置檔**: `docs/.vitepress/config.mts` - VitePress 配置
+- **文檔結構**:
+  - `docs/index.md` - 首頁
+  - `docs/guide/` - 指南頁面（getting-started, spec-driven, agents, claude）
+  - `docs/public/` - 靜態資源（圖片、GIF）
+- **部署**: GitHub Actions 自動部署到 GitHub Pages（使用 DocFX）
+
 ### 工作流程腳本
 
 **關鍵腳本** (位於 `scripts/bash/`):
@@ -91,6 +101,24 @@ uv run specify init --here --ai claude
 # 強制覆寫（跳過確認）
 uv run specify init . --force --ai claude
 ```
+
+### VitePress 文檔開發
+
+```bash
+# 開發模式（熱重載）
+npm run docs:dev
+
+# 建置文檔
+npm run docs:build
+
+# 預覽建置結果
+npm run docs:preview
+```
+
+**重要注意事項**：
+- VitePress 使用 emoji 作為錨點 ID 的一部分（例如：`#🤔-什麼是規格驅動開發`）
+- 所有圖片資源應放在 `docs/public/` 目錄
+- 文檔使用 `/guide/` 路由結構進行內部導航
 
 ### Git 工作流程
 

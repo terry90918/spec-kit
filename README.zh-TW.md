@@ -536,7 +536,7 @@ Blazor server，具有拖放任務板、即時更新。應該建立一個 REST A
 你也可以要求 Claude Code（如果你已安裝 [GitHub CLI](https://docs.github.com/en/github-cli/github-cli)）從你的目前分支到 `main` 建立一個包含詳細描述的 pull request，以確保正確追蹤工作。
 
 >[!NOTE]
->在讓 agent 實作之前，也值得提示 Claude Code 交叉檢查細節，看是否有任何過度工程化的部分（記住 - 它可能過於熱心）。如果存在過度工程化的元件或決策，你可以要求 Claude Code 解決它們。確保 Claude Code 遵循 [憲法](base/memory/constitution.md) 作為它在建立計畫時必須遵守的基礎部分。
+>在讓 agent 實作之前，也值得提示 Claude Code 交叉檢查細節，看是否有任何過度工程化的部分（記住 - 它可能過於熱心）。如果存在過度工程化的元件或決策，你可以要求 Claude Code 解決它們。確保 Claude Code 遵循憲法作為它在建立計畫時必須遵守的基礎部分。
 
 ### **步驟 6：** 使用 /speckit.tasks 產生任務分解
 
