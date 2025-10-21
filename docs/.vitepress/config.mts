@@ -5,6 +5,9 @@ export default defineConfig({
   title: "Spec Kit",
   description: "規格驅動開發工具包 - 更快速地建構高品質軟體",
   lang: 'zh-TW',
+  ignoreDeadLinks: [
+    /^\.\/index$/,
+  ],
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -25,13 +28,6 @@ export default defineConfig({
           { text: '規格驅動開發', link: '/guide/spec-driven' },
           { text: 'AI Agents 支援', link: '/guide/agents' },
           { text: 'Claude Code 指南', link: '/guide/claude' },
-        ]
-      },
-      {
-        text: '參考',
-        items: [
-          { text: 'Specify CLI', link: '/reference/cli' },
-          { text: 'Slash 命令', link: '/reference/commands' },
         ]
       },
       {

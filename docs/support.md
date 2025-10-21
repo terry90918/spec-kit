@@ -7,8 +7,8 @@
 如需使用本專案的協助或疑問，請：
 
 - 開啟 [GitHub issue](https://github.com/github/spec-kit/issues/new) 以回報錯誤、請求功能或詢問關於 Spec-Driven Development 方法論的問題
-- 查看[完整指南](./spec-driven.md)以取得 Spec-Driven Development 流程的詳細文件
-- 查閱 [README](./README.md) 以取得入門指引和疑難排解技巧
+- 查看[完整指南](/guide/spec-driven)以取得 Spec-Driven Development 流程的詳細文件
+- 查閱 [快速開始指南](/guide/getting-started) 以取得入門指引和疑難排解技巧
 
 ## 專案狀態
 

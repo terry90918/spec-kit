@@ -124,7 +124,7 @@ uvx --from git+https://github.com/github/spec-kit.git specify init <PROJECT_NAME
 /speckit.implement
 ```
 
-詳細的逐步說明請參見我們的[完整指南](./spec-driven.md)。
+詳細的逐步說明請參見我們的[完整指南](/guide/spec-driven)。
 
 ## 📽️ 影片概覽
 
@@ -304,7 +304,7 @@ specify check
 
 ## 📖 了解更多
 
-- **[完整規格驅動開發方法論](./spec-driven.md)** - 深入了解完整流程
+- **[完整規格驅動開發方法論](/guide/spec-driven)** - 深入了解完整流程
 - **[詳細步驟說明](#-詳細流程)** - 逐步實作指南
 
 ---
@@ -536,7 +536,7 @@ Blazor server，具有拖放任務板、即時更新。應該建立一個 REST A
 你也可以要求 Claude Code（如果你已安裝 [GitHub CLI](https://docs.github.com/en/github-cli/github-cli)）從你的目前分支到 `main` 建立一個包含詳細描述的 pull request，以確保正確追蹤工作。
 
 >[!NOTE]
->在讓 agent 實作之前，也值得提示 Claude Code 交叉檢查細節，看是否有任何過度工程化的部分（記住 - 它可能過於熱心）。如果存在過度工程化的元件或決策，你可以要求 Claude Code 解決它們。確保 Claude Code 遵循 [憲法](base/memory/constitution.md) 作為它在建立計畫時必須遵守的基礎部分。
+>在讓 agent 實作之前，也值得提示 Claude Code 交叉檢查細節，看是否有任何過度工程化的部分（記住 - 它可能過於熱心）。如果存在過度工程化的元件或決策，你可以要求 Claude Code 解決它們。確保 Claude Code 遵循 [憲法]() 作為它在建立計畫時必須遵守的基礎部分。
 
 ### **步驟 6：** 使用 /speckit.tasks 產生任務分解
 
@@ -615,4 +615,4 @@ rm gcm-linux_amd64.2.6.1.deb
 
 ## 📄 授權
 
-此專案根據 MIT 開源授權條款授權。請參閱 [LICENSE](./LICENSE) 檔案以了解完整條款。
+此專案根據 MIT 開源授權條款授權。請參閱 [LICENSE](https://github.com/github/spec-kit/blob/main/LICENSE) 檔案以了解完整條款。

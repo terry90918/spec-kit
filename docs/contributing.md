@@ -1,8 +1,8 @@
 ## 貢獻至 Spec Kit
 
-您好！我們很高興您願意貢獻至 Spec Kit。對此專案的貢獻將在專案的[開源授權條款](LICENSE)下[發佈](https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license)至公眾。
+您好！我們很高興您願意貢獻至 Spec Kit。對此專案的貢獻將在專案的[開源授權條款](https://github.com/github/spec-kit/blob/main/LICENSE)下[發佈](https://help.github.com/articles/github-terms-of-service/#6-contributions-under-repository-license)至公眾。
 
-請注意，本專案遵守[貢獻者行為準則](CODE_OF_CONDUCT.md)。參與本專案即表示您同意遵守其條款。
+請注意，本專案遵守[貢獻者行為準則](https://github.com/github/spec-kit/blob/main/CODE_OF_CONDUCT.md)。參與本專案即表示您同意遵守其條款。
 
 ## 執行和測試程式碼的先決條件
 
@@ -119,7 +119,7 @@
 
 ## 資源
 
-- [Spec-Driven Development 方法論](./spec-driven.md)
+- [Spec-Driven Development 方法論](/guide/spec-driven)
 - [如何貢獻至開源](https://opensource.guide/how-to-contribute/)
 - [使用 Pull Requests](https://help.github.com/articles/about-pull-requests/)
 - [GitHub 說明](https://help.github.com)
