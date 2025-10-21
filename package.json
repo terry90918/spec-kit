@@ -1,0 +1,30 @@
+{
+  "name": "spec-kit-docs",
+  "version": "1.0.0",
+  "description": "Spec Kit 繁體中文文檔 - 規格驅動開發工具包",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/spec-kit.git"
+  },
+  "keywords": [
+    "spec-driven-development",
+    "vitepress",
+    "documentation",
+    "ai-agents",
+    "claude-code"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/github/spec-kit/issues"
+  },
+  "homepage": "https://github.com/github/spec-kit#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}

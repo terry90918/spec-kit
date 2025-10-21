@@ -1,34 +1,47 @@
-# Documentation
+# Spec Kit 文檔
 
-This folder contains the documentation source files for Spec Kit, built using [DocFX](https://dotnet.github.io/docfx/).
+這是 Spec Kit 的 VitePress 文檔網站。
 
-## Building Locally
+## 本地開發
 
-To build the documentation locally:
+```bash
+# 安裝相依套件
+npm install
 
-1. Install DocFX:
-   ```bash
-   dotnet tool install -g docfx
-   ```
+# 啟動開發伺服器
+npm run docs:dev
 
-2. Build the documentation:
-   ```bash
-   cd docs
-   docfx docfx.json --serve
-   ```
+# 建置靜態網站
+npm run docs:build
 
-3. Open your browser to `http://localhost:8080` to view the documentation.
+# 預覽建置結果
+npm run docs:preview
+```
 
-## Structure
+## 文檔結構
 
-- `docfx.json` - DocFX configuration file
-- `index.md` - Main documentation homepage
-- `toc.yml` - Table of contents configuration
-- `installation.md` - Installation guide
-- `quickstart.md` - Quick start guide
-- `_site/` - Generated documentation output (ignored by git)
+```
+docs/
+├── .vitepress/
+│   └── config.mts          # VitePress 配置檔
+├── guide/
+│   ├── getting-started.md  # 快速開始指南
+│   ├── spec-driven.md      # SDD 方法論
+│   ├── agents.md           # AI Agents 支援
+│   └── claude.md           # Claude Code 指南
+├── reference/              # API 參考（待建立）
+├── public/                 # 靜態資源
+│   └── logo_small.webp     # Logo
+├── index.md                # 首頁
+├── contributing.md         # 貢獻指南
+├── security.md             # 安全性政策
+└── support.md              # 支援資訊
+```
 
-## Deployment
+## 文檔來源
 
-Documentation is automatically built and deployed to GitHub Pages when changes are pushed to the `main` branch. The workflow is defined in `.github/workflows/docs.yml`.
+所有文檔內容來自專案根目錄的繁體中文翻譯檔案（*.zh-TW.md）。
 
+## 部署
+
+建置後的靜態檔案位於 `docs/.vitepress/dist/`，可以部署到任何靜態網站託管服務。

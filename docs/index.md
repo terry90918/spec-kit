@@ -1,63 +1,98 @@
-# Spec Kit
+---
+layout: home
 
-*Build high-quality software faster.*
+hero:
+  name: "Spec Kit"
+  text: "規格驅動開發工具包"
+  tagline: 更快速地建構高品質軟體
+  image:
+    src: /logo_small.webp
+    alt: Spec Kit
+  actions:
+    - theme: brand
+      text: 快速開始
+      link: /guide/getting-started
+    - theme: alt
+      text: 了解 SDD 方法論
+      link: /guide/spec-driven
+    - theme: alt
+      text: GitHub
+      link: https://github.com/github/spec-kit
 
-**An effort to allow organizations to focus on product scenarios rather than writing undifferentiated code with the help of Spec-Driven Development.**
+features:
+  - icon: 📝
+    title: 規格驅動開發
+    details: 從規格文件自動產生程式碼，專注於「做什麼」而不是「怎麼做」
+  - icon: 🤖
+    title: AI Agent 整合
+    details: 支援 Claude Code、GitHub Copilot、Gemini CLI 等多種 AI 編碼助手
+  - icon: 🔧
+    title: Specify CLI
+    details: 強大的命令列工具，快速初始化專案並設定開發環境
+  - icon: 📋
+    title: 結構化工作流程
+    details: 從憲法、規格、計畫到任務，系統化的開發流程
+  - icon: 🎯
+    title: 任務自動化
+    details: 自動產生可執行的任務清單，確保實作符合規格
+  - icon: 🌍
+    title: 跨平台支援
+    details: 支援 Linux、macOS、Windows 和多種腳本類型（Bash、PowerShell）
+---
 
-## What is Spec-Driven Development?
+## 什麼是規格驅動開發？
 
-Spec-Driven Development **flips the script** on traditional software development. For decades, code has been king — specifications were just scaffolding we built and discarded once the "real work" of coding began. Spec-Driven Development changes this: **specifications become executable**, directly generating working implementations rather than just guiding them.
+規格驅動開發（Spec-Driven Development, SDD）**顛覆了**傳統軟體開發的思維。數十年來，程式碼一直是王道——規格只是我們建立的鷹架，一旦開始「真正的」編碼工作，就會被丟棄。
 
-## Getting Started
+規格驅動開發改變了這一點：**規格變得可執行**，直接產生可運作的實作，而不僅僅是指導它們。
 
-- [Installation Guide](installation.md)
-- [Quick Start Guide](quickstart.md)
-- [Local Development](local-development.md)
+## 快速開始
 
-## Core Philosophy
+### 安裝 Specify CLI
 
-Spec-Driven Development is a structured process that emphasizes:
+```bash
+# 持久安裝（推薦）
+uv tool install specify-cli --from git+https://github.com/github/spec-kit.git
 
-- **Intent-driven development** where specifications define the "_what_" before the "_how_"
-- **Rich specification creation** using guardrails and organizational principles
-- **Multi-step refinement** rather than one-shot code generation from prompts
-- **Heavy reliance** on advanced AI model capabilities for specification interpretation
+# 使用工具
+specify init my-project --ai claude
+```
 
-## Development Phases
+### SDD 工作流程
 
-| Phase | Focus | Key Activities |
-|-------|-------|----------------|
-| **0-to-1 Development** ("Greenfield") | Generate from scratch | <ul><li>Start with high-level requirements</li><li>Generate specifications</li><li>Plan implementation steps</li><li>Build production-ready applications</li></ul> |
-| **Creative Exploration** | Parallel implementations | <ul><li>Explore diverse solutions</li><li>Support multiple technology stacks & architectures</li><li>Experiment with UX patterns</li></ul> |
-| **Iterative Enhancement** ("Brownfield") | Brownfield modernization | <ul><li>Add features iteratively</li><li>Modernize legacy systems</li><li>Adapt processes</li></ul> |
+1. **建立專案原則** - 使用 `/speckit.constitution` 建立治理原則
+2. **撰寫規格** - 使用 `/speckit.specify` 描述你想建構的內容
+3. **技術規劃** - 使用 `/speckit.plan` 提供技術堆疊和架構
+4. **分解任務** - 使用 `/speckit.tasks` 產生可執行任務清單
+5. **執行實作** - 使用 `/speckit.implement` 自動建構功能
 
-## Experimental Goals
+## 支援的 AI Agents
 
-Our research and experimentation focus on:
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 2rem 0;">
+  <div>✅ Claude Code</div>
+  <div>✅ GitHub Copilot</div>
+  <div>✅ Gemini CLI</div>
+  <div>✅ Cursor</div>
+  <div>✅ Qwen Code</div>
+  <div>✅ opencode</div>
+  <div>✅ Windsurf</div>
+  <div>✅ Kilo Code</div>
+  <div>✅ Auggie CLI</div>
+  <div>✅ Roo Code</div>
+  <div>✅ CodeBuddy CLI</div>
+  <div>✅ Codex CLI</div>
+</div>
 
-### Technology Independence
-- Create applications using diverse technology stacks
-- Validate the hypothesis that Spec-Driven Development is a process not tied to specific technologies, programming languages, or frameworks
+## 核心理念
 
-### Enterprise Constraints
-- Demonstrate mission-critical application development
-- Incorporate organizational constraints (cloud providers, tech stacks, engineering practices)
-- Support enterprise design systems and compliance requirements
+- **意圖驅動開發** - 規格在「如何做」之前定義「做什麼」
+- **可執行規格** - 規格足夠精確，可直接產生可運作的系統
+- **持續改進** - 一致性驗證貫穿整個過程
+- **研究驅動** - 自動收集技術選型和最佳實務
+- **雙向回饋** - 生產環境的洞察反饋到規格演進
 
-### User-Centric Development
-- Build applications for different user cohorts and preferences
-- Support various development approaches (from vibe-coding to AI-native development)
+## 社群與支援
 
-### Creative & Iterative Processes
-- Validate the concept of parallel implementation exploration
-- Provide robust iterative feature development workflows
-- Extend processes to handle upgrades and modernization tasks
-
-## Contributing
-
-Please see our [Contributing Guide](https://github.com/github/spec-kit/blob/main/CONTRIBUTING.md) for information on how to contribute to this project.
-
-## Support
-
-For support, please check our [Support Guide](https://github.com/github/spec-kit/blob/main/SUPPORT.md) or open an issue on GitHub.
-
+- [GitHub Issues](https://github.com/github/spec-kit/issues) - 回報錯誤、請求功能
+- [貢獻指南](/contributing) - 了解如何貢獻
+- [完整文件](/guide/spec-driven) - 深入了解 SDD 方法論
